@@ -1,0 +1,26 @@
+:root {
+  --coc-font-main: "Libre Franklin", Arial, sans-serif;
+  --coc-font-secondary: "DM Sans", Arial, sans-serif;
+
+  --coc-color-primary: #0a4f3d;
+  --coc-color-secondary: #f3fefa;
+  --coc-color-accent: #289383;
+
+  --coc-color-text: #202329;
+  --coc-color-heading: #101820;
+  --coc-color-muted: #4b5563;
+  --coc-color-border: #dfe8e4;
+
+  --coc-color-white: #ffffff;
+  --coc-color-black: #000000;
+  --coc-color-off-white: #f8fffc;
+  --coc-color-danger: #ff3b30;
+  --coc-color-success: #08ad18;
+
+  --coc-page-bg: #ffffff;
+  --coc-section-bg: #f3fefa;
+  --coc-card-bg: #ffffff;
+
+  --coc-btn-bg: #0a4f3d;
+  --coc-btn-text: #ffffff;
+}

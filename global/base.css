@@ -1,0 +1,79 @@
+:root {
+  --coc-font-main: "Libre Franklin", Arial, sans-serif;
+  --coc-font-secondary: "DM Sans", Arial, sans-serif;
+
+  --coc-color-primary: #0a4f3d;
+  --coc-color-secondary: #f3fefa;
+  --coc-color-accent: #289383;
+
+  --coc-color-text: #202329;
+  --coc-color-heading: #101820;
+  --coc-color-muted: #4b5563;
+  --coc-color-border: #dfe8e4;
+
+  --coc-color-white: #ffffff;
+  --coc-color-black: #000000;
+  --coc-color-off-white: #f8fffc;
+  --coc-color-danger: #ff3b30;
+  --coc-color-success: #08ad18;
+
+  --coc-page-bg: var(--coc-color-white);
+  --coc-section-bg: var(--coc-color-secondary);
+  --coc-card-bg: var(--coc-color-white);
+
+  --coc-btn-bg: var(--coc-color-primary);
+  --coc-btn-text: var(--coc-color-white);
+
+  --coc-container: 1200px;
+
+  --coc-radius-sm: 8px;
+  --coc-radius-md: 12px;
+  --coc-radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--coc-font-main);
+  color: var(--coc-color-text);
+  background: var(--coc-page-bg);
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+img,
+video {
+  display: block;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.coc-container {
+  width: 100%;
+  max-width: var(--coc-container);
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,0 +1,26 @@
+:root {
+  --coc-font-main: Arial, sans-serif;
+  --coc-font-secondary: Arial, sans-serif;
+
+  --coc-color-primary: #101820;
+  --coc-color-secondary: #f7f7f7;
+  --coc-color-accent: #0a4f3d;
+
+  --coc-color-text: #202329;
+  --coc-color-heading: #101820;
+  --coc-color-muted: #4b5563;
+  --coc-color-border: #dddddd;
+
+  --coc-color-white: #ffffff;
+  --coc-color-black: #000000;
+  --coc-color-off-white: #f8f8f8;
+  --coc-color-danger: #ff3b30;
+  --coc-color-success: #08ad18;
+
+  --coc-page-bg: #ffffff;
+  --coc-section-bg: #f7f7f7;
+  --coc-card-bg: #ffffff;
+
+  --coc-btn-bg: #101820;
+  --coc-btn-text: #ffffff;
+}

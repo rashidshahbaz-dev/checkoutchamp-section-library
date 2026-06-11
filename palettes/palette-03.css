@@ -1,0 +1,26 @@
+:root {
+  --coc-font-main: "Montserrat", Arial, sans-serif;
+  --coc-font-secondary: "Open Sans", Arial, sans-serif;
+
+  --coc-color-primary: #e45a91;
+  --coc-color-secondary: #fff5f8;
+  --coc-color-accent: #f51975;
+
+  --coc-color-text: #202329;
+  --coc-color-heading: #111111;
+  --coc-color-muted: #666666;
+  --coc-color-border: #f1c9d9;
+
+  --coc-color-white: #ffffff;
+  --coc-color-black: #000000;
+  --coc-color-off-white: #fff8fb;
+  --coc-color-danger: #e20000;
+  --coc-color-success: #08ad18;
+
+  --coc-page-bg: #ffffff;
+  --coc-section-bg: #fff5f8;
+  --coc-card-bg: #ffffff;
+
+  --coc-btn-bg: #e45a91;
+  --coc-btn-text: #ffffff;
+}

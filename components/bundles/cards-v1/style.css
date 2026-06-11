@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>COC Bundles Cards V1</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../../global/base.css">
+  <link rel="stylesheet" href="../../../palettes/purelia.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main class="coc-preview-main">
+    <section class="coc-bundles coc-bundles--cards coc-bundles-cards-v1" id="subscription" data-coc-bundles>
+      <div class="coc-bundles__inner">
+
+        <div class="coc-bundles__header">
+          <h2 class="coc-bundles__heading">Choose Your Pack</h2>
+
+          <div class="coc-bundles__alert">
+            <span class="coc-bundles__alert-dot"></span>
+            <span>More than 347 purchased in the last 48 hours!</span>
+          </div>
+
+          <div class="coc-bundles__toggle" role="tablist" aria-label="Purchase type">
+            <button
+              class="coc-bundles__toggle-btn"
+              type="button"
+              data-coc-bundle-tab="one-time"
+              action="none"
+            >
+              One-time purchase
+            </button>
+
+            <button
+              class="coc-bundles__toggle-btn is-active"
+              type="button"
+              data-coc-bundle-tab="subscription"
+              action="none"
+            >
+              Subscribe <span>Save 10%</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- SUBSCRIPTION PLANS -->
+        <div class="coc-bundles__plans is-active" data-coc-bundle-panel="subscription">
+
+          <div class="coc-bundles__card coc-bundles__card--one">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--empty"></div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">1 Month Supply</h3>
+                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057760021_1bottle_purelia.png"
+                  alt="1 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">1 Month Supply</h3>
+                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$29.99</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $29.99 <s>$49.99</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $1.00 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn"
+              id="coc-sub-1-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="198"
+              variantvalue=""
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. $4.99 Shipping.</p>
+            </div>
+          </div>
+
+          <div class="coc-bundles__card coc-bundles__card--best is-featured">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--green">
+              Best Results
+            </div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">6 Months Supply</h3>
+                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image coc-bundles__product-image--large fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057765417_5bottle_purelia.png"
+                  alt="6 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">6 Months Supply</h3>
+                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$17.99</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $89.99 <s>$249.95</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $0.60 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn coc-bundles__card-btn--light"
+              id="coc-sub-6-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="195"
+              variantvalue=""
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. Free Shipping</p>
+            </div>
+          </div>
+
+          <div class="coc-bundles__card coc-bundles__card--popular">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--dark">
+              Most Popular
+            </div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">3 Months Supply</h3>
+                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057776921_3bottle_purelia.png"
+                  alt="3 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">3 Months Supply</h3>
+                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$19.99</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $59.99 <s>$149.97</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $0.66 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn"
+              id="coc-sub-3-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="194"
+              variantvalue=""
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. Free Shipping</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONE-TIME PLANS -->
+        <div class="coc-bundles__plans" data-coc-bundle-panel="one-time">
+
+          <div class="coc-bundles__card coc-bundles__card--one">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--empty"></div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">1 Month Supply</h3>
+                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057760021_1bottle_purelia.png"
+                  alt="1 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">1 Month Supply</h3>
+                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$39.99</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $39.99 <s>$49.99</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $1.34 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn"
+              id="coc-one-1-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="156"
+              variantvalue="143"
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. $4.99 Shipping.</p>
+            </div>
+          </div>
+
+          <div class="coc-bundles__card coc-bundles__card--best is-featured">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--green">
+              Best Results
+            </div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">6 Months Supply</h3>
+                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image coc-bundles__product-image--large fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057765417_5bottle_purelia.png"
+                  alt="6 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">6 Months Supply</h3>
+                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$23.99</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $119.00 <s>$249.95</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $0.80 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn coc-bundles__card-btn--light"
+              id="coc-one-6-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="156"
+              variantvalue="145"
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. Free Shipping</p>
+            </div>
+          </div>
+
+          <div class="coc-bundles__card coc-bundles__card--popular">
+            <div class="coc-bundles__card-badge coc-bundles__card-badge--dark">
+              Most Popular
+            </div>
+
+            <div class="coc-bundles__card-content">
+              <div class="coc-bundles__media">
+                <div class="coc-bundles__card-head coc-desktop-view">
+                  <h3 class="coc-bundles__name">3 Months Supply</h3>
+                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
+                </div>
+
+                <img
+                  class="coc-bundles__product-image fk-disable-lazy"
+                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057776921_3bottle_purelia.png"
+                  alt="3 Month Supply"
+                >
+              </div>
+
+              <div class="coc-bundles__info">
+                <div class="coc-bundles__card-head coc-mobile-view">
+                  <h3 class="coc-bundles__name">3 Months Supply</h3>
+                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
+                </div>
+
+                <div class="coc-bundles__price">
+                  <span>$26.66</span>
+                  <small>/bottle</small>
+                </div>
+
+                <div class="coc-bundles__total">
+                  <b>Total:</b> $79.00 <s>$149.97</s>
+                </div>
+
+                <div class="coc-bundles__daily-price">
+                  Less than $0.88 per day
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="coc-bundles__card-btn"
+              id="coc-one-3-btn"
+              type="button"
+              onclick="route(event)"
+              action="route"
+              offer="156"
+              variantvalue="144"
+              replaceproductid=""
+              quantity=""
+              price=""
+              billnow="false"
+              upsell=""
+              size="none"
+              btntype="none"
+            >
+              Order Now
+            </button>
+
+            <div class="coc-bundles__payment">
+              <img
+                class="fk-disable-lazy"
+                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
+                alt="Payment methods"
+              >
+              <p>No hidden fees. Free Shipping</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
