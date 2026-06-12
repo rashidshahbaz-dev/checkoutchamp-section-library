@@ -73,3 +73,141 @@ body {
   font-weight: 400;
   margin-top: 4px;
 }
+
+
+---
+
+## Add this to bottom of `global/preview.css`
+
+```css
+.library-back {
+  display: inline-block;
+  color: #0a4f3d;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.component-preview {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dfe8e4;
+  border-radius: 14px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.component-preview__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #dfe8e4;
+  padding: 18px 20px;
+}
+
+.component-preview__head h2 {
+  margin: 0;
+  color: #101820;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.component-preview__open {
+  color: #0a4f3d;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.component-preview__render {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 24px;
+}
+
+.component-code-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid #dfe8e4;
+}
+
+.component-code-box {
+  min-width: 0;
+  border-right: 1px solid #dfe8e4;
+  background: #101820;
+}
+
+.component-code-box:last-child {
+  border-right: 0;
+}
+
+.component-code-box__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #dfe8e4;
+  padding: 12px 14px;
+}
+
+.component-code-box__top h3 {
+  margin: 0;
+  color: #101820;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.copy-code-btn {
+  border: 0;
+  border-radius: 6px;
+  background: #0a4f3d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.component-code-box pre {
+  max-height: 420px;
+  overflow: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.component-code-box code {
+  color: #e8f5ef;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+@media screen and (max-width: 767px) {
+  .component-preview__head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .component-preview__render {
+    padding: 16px;
+  }
+
+  .component-code-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-code-box {
+    border-right: 0;
+    border-bottom: 1px solid #dfe8e4;
+  }
+
+  .component-code-box:last-child {
+    border-bottom: 0;
+  }
+}
