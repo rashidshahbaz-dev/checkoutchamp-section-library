@@ -1,4 +1,29 @@
 (function () {
+  function loadCodeBlocks() {
+    var blocks = document.querySelectorAll("[data-code-src]");
+
+    blocks.forEach(function (block) {
+      var filePath = block.getAttribute("data-code-src");
+
+      if (!filePath) return;
+
+      fetch(filePath)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("Unable to load " + filePath);
+          }
+
+          return response.text();
+        })
+        .then(function (code) {
+          block.textContent = code;
+        })
+        .catch(function () {
+          block.textContent = "Unable to load code from: " + filePath;
+        });
+    });
+  }
+
   function initCopyButtons() {
     var buttons = document.querySelectorAll("[data-copy-target]");
 
@@ -24,9 +49,14 @@
     });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initCopyButtons);
-  } else {
+  function initPreview() {
+    loadCodeBlocks();
     initCopyButtons();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPreview);
+  } else {
+    initPreview();
   }
 })();
