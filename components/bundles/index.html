@@ -2,120 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bundles | CheckoutChamp Section Library</title>
+  <title>Bundles | CheckoutChamp Section Library</title>
 
-    <link rel="stylesheet" href="../../global/base.css" />
-    <link rel="stylesheet" href="../../global/preview.css" />
-    <link rel="stylesheet" href="../../palettes/palette-01.css" />
+  <link rel="stylesheet" href="../../global/base.css" />
+  <link rel="stylesheet" href="../../global/preview.css" />
+  <link rel="stylesheet" href="../../palettes/palette-01.css" />
 
-    <style>
+  <style>
+    .component-code-grid.component-code-grid--three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media screen and (max-width: 1023px) {
       .component-code-grid.component-code-grid--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media screen and (max-width: 1023px) {
-  .component-code-grid.component-code-grid--three {
-    grid-template-columns: 1fr;
-  }
-}
-    </style>
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <main class="library">
-        <header class="library__header">
-            <a class="library-back" href="../../index.html">← Back to Library</a>
-            <h1>Bundles</h1>
-            <p>Reusable bundle, pricing, package selector, and subscription components for CheckoutChamp pages.</p>
-        </header>
+  <main class="library">
+    <header class="library__header">
+      <a class="library-back" href="../../index.html">← Back to Library</a>
+      <h1>Bundles</h1>
+      <p>Reusable bundle, pricing, package selector, and subscription components for CheckoutChamp pages.</p>
+    </header>
 
-        <section class="component-preview">
-            <div class="component-preview__head">
-                <h2>Bundle Cards V1</h2>
-                <a class="component-preview__open" href="./cards-v1/">Open full preview</a>
-            </div>
+    <section class="component-preview">
+      <div class="component-preview__head">
+        <h2>Bundle Cards V1</h2>
+        <a class="component-preview__open" href="./cards-v1/">Open full preview</a>
+      </div>
 
-            <div class="component-preview__render">
-                <iframe class="component-preview__iframe" src="./cards-v1/" title="Bundle Cards V1 Preview"></iframe>
-            </div>
-<div class="component-code-grid">
-  <div class="component-code-box">
-    <div class="component-code-box__top">
-      <h3>HTML</h3>
-      <button type="button" class="copy-code-btn" data-copy-target="bundle-cards-v1-html">
-        Copy HTML
-      </button>
-    </div>
+      <div class="component-preview__render">
+        <iframe class="component-preview__iframe" src="./cards-v1/" title="Bundle Cards V1 Preview"></iframe>
+      </div>
+      <div class="component-code-grid component-code-grid--three">
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>HTML</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-cards-v1-html">
+              Copy HTML
+            </button>
+          </div>
 
-    <pre><code
-      id="bundle-cards-v1-html"
-      data-code-src="./cards-v1/index.html"
-      data-code-selector=".coc-bundles"
-    >Loading HTML...</code></pre>
-  </div>
+          <pre><code
+  id="bundle-cards-v1-html"
+  data-code-src="./cards-v1/index.html"
+  data-code-selector=".coc-bundles"
+>Loading HTML...</code></pre>
+        </div>
 
-  <div class="component-code-box">
-    <div class="component-code-box__top">
-      <h3>CSS</h3>
-      <button type="button" class="copy-code-btn" data-copy-target="bundle-cards-v1-css">
-        Copy CSS
-      </button>
-    </div>
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>CSS</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-cards-v1-css">
+              Copy CSS
+            </button>
+          </div>
+          <pre><code
+  id="bundle-cards-v1-css"
+  data-code-src="./cards-v1/style.css"
+>Loading CSS...</code></pre>
+        </div>
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>JS</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-cards-v1-css">
+              Copy JS
+            </button>
+          </div>
+          <pre><code
+  id="bundle-cards-v1-js"
+  data-code-src="./cards-v1/script.js"
+>Loading JS...</code></pre>
+        </div>
+      </div>
+    </section>
 
-    <pre><code
-      id="bundle-cards-v1-css"
-      data-code-src="./cards-v1/style.css"
-    >Loading CSS...</code></pre>
-  </div>
-</div>
-        </section>
+    <section class="component-preview">
+      <div class="component-preview__head">
+        <h2>Bundle List V1</h2>
+        <a class="component-preview__open" href="./list-v1/">Open full preview</a>
+      </div>
 
-        <section class="component-preview">
-            <div class="component-preview__head">
-                <h2>Bundle List V1</h2>
-                <a class="component-preview__open" href="./list-v1/">Open full preview</a>
-            </div>
+      <div class="component-preview__render">
+        <iframe class="component-preview__iframe" src="./list-v1/" title="Bundle List V1 Preview"></iframe>
+      </div>
+      <div class="component-code-grid">
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>HTML</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-list-v1-html">
+              Copy HTML
+            </button>
+          </div>
 
-            <div class="component-preview__render">
-                <iframe class="component-preview__iframe" src="./list-v1/" title="Bundle List V1 Preview"></iframe>
-            </div>
-<div class="component-code-grid">
-  <div class="component-code-box">
-    <div class="component-code-box__top">
-      <h3>HTML</h3>
-      <button type="button" class="copy-code-btn" data-copy-target="bundle-list-v1-html">
-        Copy HTML
-      </button>
-    </div>
+          <pre><code
+  id="bundle-list-v1-html"
+  data-code-src="./list-v1/index.html"
+  data-code-selector=".coc-bundles"
+>Loading HTML...</code></pre>
+        </div>
 
-    <pre><code
-      id="bundle-list-v1-html"
-      data-code-src="./list-v1/index.html"
-      data-code-selector=".coc-bundles"
-    >Loading HTML...</code></pre>
-  </div>
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>CSS</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-list-v1-css">
+              Copy CSS
+            </button>
+          </div>
 
-  <div class="component-code-box">
-    <div class="component-code-box__top">
-      <h3>CSS</h3>
-      <button type="button" class="copy-code-btn" data-copy-target="bundle-list-v1-css">
-        Copy CSS
-      </button>
-    </div>
+          <pre><code
+  id="bundle-list-v1-css"
+  data-code-src="./list-v1/style.css"
+>Loading CSS...</code></pre>
+        </div>
 
-    <pre><code
-      id="bundle-list-v1-css"
-      data-code-src="./list-v1/style.css"
-    >Loading CSS...</code></pre>
-  </div>
-</div>
-        </section>
-    </main>
+        <div class="component-code-box">
+          <div class="component-code-box__top">
+            <h3>JS</h3>
+            <button type="button" class="copy-code-btn" data-copy-target="bundle-list-v1-css">
+              Copy JS
+            </button>
+          </div>
 
-    <script src="../../global/preview.js"></script>
+          <pre><code
+  id="bundle-list-v1-js"
+  data-code-src="./list-v1/script.js"
+>Loading JS...</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../global/preview.js"></script>
 </body>
 
 </html>
