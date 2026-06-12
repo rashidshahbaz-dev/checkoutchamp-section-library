@@ -1,473 +1,508 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>COC Bundles Cards V1</title>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="../../../global/base.css">
-  <link rel="stylesheet" href="../../../palettes/purelia.css">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
-  <main class="coc-preview-main">
-    <section class="coc-bundles coc-bundles--cards coc-bundles-cards-v1" id="subscription" data-coc-bundles>
-      <div class="coc-bundles__inner">
-
-        <div class="coc-bundles__header">
-          <h2 class="coc-bundles__heading">Choose Your Pack</h2>
-
-          <div class="coc-bundles__alert">
-            <span class="coc-bundles__alert-dot"></span>
-            <span>More than 347 purchased in the last 48 hours!</span>
-          </div>
-
-          <div class="coc-bundles__toggle" role="tablist" aria-label="Purchase type">
-            <button
-              class="coc-bundles__toggle-btn"
-              type="button"
-              data-coc-bundle-tab="one-time"
-              action="none"
-            >
-              One-time purchase
-            </button>
-
-            <button
-              class="coc-bundles__toggle-btn is-active"
-              type="button"
-              data-coc-bundle-tab="subscription"
-              action="none"
-            >
-              Subscribe <span>Save 10%</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- SUBSCRIPTION PLANS -->
-        <div class="coc-bundles__plans is-active" data-coc-bundle-panel="subscription">
-
-          <div class="coc-bundles__card coc-bundles__card--one">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--empty"></div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">1 Month Supply</h3>
-                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057760021_1bottle_purelia.png"
-                  alt="1 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">1 Month Supply</h3>
-                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$29.99</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $29.99 <s>$49.99</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $1.00 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn"
-              id="coc-sub-1-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="198"
-              variantvalue=""
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. $4.99 Shipping.</p>
-            </div>
-          </div>
-
-          <div class="coc-bundles__card coc-bundles__card--best is-featured">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--green">
-              Best Results
-            </div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">6 Months Supply</h3>
-                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image coc-bundles__product-image--large fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057765417_5bottle_purelia.png"
-                  alt="6 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">6 Months Supply</h3>
-                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$17.99</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $89.99 <s>$249.95</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $0.60 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn coc-bundles__card-btn--light"
-              id="coc-sub-6-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="195"
-              variantvalue=""
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. Free Shipping</p>
-            </div>
-          </div>
-
-          <div class="coc-bundles__card coc-bundles__card--popular">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--dark">
-              Most Popular
-            </div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">3 Months Supply</h3>
-                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057776921_3bottle_purelia.png"
-                  alt="3 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">3 Months Supply</h3>
-                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$19.99</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $59.99 <s>$149.97</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $0.66 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn"
-              id="coc-sub-3-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="194"
-              variantvalue=""
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. Free Shipping</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ONE-TIME PLANS -->
-        <div class="coc-bundles__plans" data-coc-bundle-panel="one-time">
-
-          <div class="coc-bundles__card coc-bundles__card--one">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--empty"></div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">1 Month Supply</h3>
-                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057760021_1bottle_purelia.png"
-                  alt="1 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">1 Month Supply</h3>
-                  <p class="coc-bundles__sub">9% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$39.99</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $39.99 <s>$49.99</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $1.34 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn"
-              id="coc-one-1-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="156"
-              variantvalue="143"
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. $4.99 Shipping.</p>
-            </div>
-          </div>
-
-          <div class="coc-bundles__card coc-bundles__card--best is-featured">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--green">
-              Best Results
-            </div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">6 Months Supply</h3>
-                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image coc-bundles__product-image--large fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057765417_5bottle_purelia.png"
-                  alt="6 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">6 Months Supply</h3>
-                  <p class="coc-bundles__sub">56% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$23.99</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $119.00 <s>$249.95</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $0.80 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn coc-bundles__card-btn--light"
-              id="coc-one-6-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="156"
-              variantvalue="145"
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. Free Shipping</p>
-            </div>
-          </div>
-
-          <div class="coc-bundles__card coc-bundles__card--popular">
-            <div class="coc-bundles__card-badge coc-bundles__card-badge--dark">
-              Most Popular
-            </div>
-
-            <div class="coc-bundles__card-content">
-              <div class="coc-bundles__media">
-                <div class="coc-bundles__card-head coc-desktop-view">
-                  <h3 class="coc-bundles__name">3 Months Supply</h3>
-                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
-                </div>
-
-                <img
-                  class="coc-bundles__product-image fk-disable-lazy"
-                  src="https://assets.checkoutchamp.com/b725bc67-11de-4ea0-b598-f7e092cb6034/1781057776921_3bottle_purelia.png"
-                  alt="3 Month Supply"
-                >
-              </div>
-
-              <div class="coc-bundles__info">
-                <div class="coc-bundles__card-head coc-mobile-view">
-                  <h3 class="coc-bundles__name">3 Months Supply</h3>
-                  <p class="coc-bundles__sub">35% of customers buy this plan</p>
-                </div>
-
-                <div class="coc-bundles__price">
-                  <span>$26.66</span>
-                  <small>/bottle</small>
-                </div>
-
-                <div class="coc-bundles__total">
-                  <b>Total:</b> $79.00 <s>$149.97</s>
-                </div>
-
-                <div class="coc-bundles__daily-price">
-                  Less than $0.88 per day
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="coc-bundles__card-btn"
-              id="coc-one-3-btn"
-              type="button"
-              onclick="route(event)"
-              action="route"
-              offer="156"
-              variantvalue="144"
-              replaceproductid=""
-              quantity=""
-              price=""
-              billnow="false"
-              upsell=""
-              size="none"
-              btntype="none"
-            >
-              Order Now
-            </button>
-
-            <div class="coc-bundles__payment">
-              <img
-                class="fk-disable-lazy"
-                src="https://assets.imagehub.io/b08d0df8-eb0b-4658-b9b9-4b1264f0544e/1760995985075_payment_group.png"
-                alt="Payment methods"
-              >
-              <p>No hidden fees. Free Shipping</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+.coc-preview-main {
+  padding: 20px;
+}
+
+.coc-bundles,
+.coc-bundles * {
+  box-sizing: border-box;
+}
+
+.coc-bundles--cards {
+  width: 100%;
+  background: var(--coc-color-white);
+  font-family: var(--coc-font-main);
+  color: var(--coc-color-text);
+}
+
+.coc-bundles--cards .coc-bundles__inner {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.coc-bundles--cards .coc-bundles__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 30px;
+}
+
+.coc-bundles__heading {
+  color: var(--coc-color-heading);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.coc-bundles__alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 29px;
+  border: 1px solid var(--coc-color-danger);
+  border-radius: 10px;
+  background: #fff0f0;
+  color: var(--coc-color-text);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 5px 14px;
+}
+
+.coc-bundles__alert-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--coc-color-danger);
+  box-shadow: 0 0 0 5px rgba(255, 59, 48, 0.12);
+  flex: 0 0 auto;
+  animation: coc-red-shine 2s linear infinite;
+}
+
+@keyframes coc-red-shine {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 8px rgba(255, 59, 48, 0);
+  }
+}
+
+.coc-bundles__toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 390px;
+  gap: 6px;
+  border: 1px solid var(--coc-color-border);
+  border-radius: 9px;
+  background: var(--coc-color-white);
+  margin-top: 15px;
+  padding: 6px;
+}
+
+.coc-bundles__toggle-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--coc-color-text);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  min-height: 40px;
+  text-align: center;
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.coc-bundles__toggle-btn span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  border-radius: 999px;
+  margin-left: 4px;
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 8px;
+}
+
+.coc-bundles__toggle-btn.is-active {
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+}
+
+.coc-bundles__toggle-btn.is-active span {
+  background: var(--coc-color-white);
+  color: var(--coc-color-primary);
+}
+
+.coc-bundles__plans {
+  display: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  align-items: center;
+}
+
+.coc-bundles__plans.is-active {
+  display: grid;
+}
+
+.coc-bundles__card {
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--coc-color-secondary);
+}
+
+.coc-bundles__card.is-featured {
+  background: var(--coc-color-accent);
+  color: var(--coc-color-white);
+}
+
+.coc-bundles__card-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  color: var(--coc-color-white);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px 10px;
+}
+
+.coc-bundles__card-badge--green {
+  background: var(--coc-color-primary);
+}
+
+.coc-bundles__card-badge--dark {
+  background: var(--coc-color-heading);
+}
+
+.coc-bundles__card-badge--empty {
+  background: transparent;
+  min-height: 10px;
+  padding: 0;
+}
+
+.coc-bundles__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px 0;
+}
+
+.coc-bundles__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 128px;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coc-bundles__info {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.coc-bundles__card-head {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.coc-bundles__name {
+  color: inherit;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.coc-bundles__sub {
+  color: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.coc-mobile-view {
+  display: none;
+}
+
+.coc-bundles__product-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 128px;
+  object-fit: contain;
+}
+
+.coc-bundles__product-image--large {
+  max-width: 210px;
+}
+
+.coc-bundles__price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 3px;
+  color: var(--coc-color-primary);
+}
+
+.coc-bundles__card.is-featured .coc-bundles__price {
+  color: var(--coc-color-white);
+}
+
+.coc-bundles__price span {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.coc-bundles__price small {
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  transform: translate(2px, 9px);
+}
+
+.coc-bundles__total {
+  color: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 3px 0 6px;
+}
+
+.coc-bundles__total b {
+  font-weight: 700;
+}
+
+.coc-bundles__total s {
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.coc-bundles__daily-price {
+  text-align: center;
+  min-height: 26px;
+  border: 1px dashed currentColor;
+  border-radius: 999px;
+  background: var(--coc-color-white);
+  color: var(--coc-color-primary);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 3px 10px;
+}
+
+.coc-bundles__card.is-featured .coc-bundles__daily-price {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--coc-color-white);
+}
+
+.coc-bundles__card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 20px);
+  max-width: 270px;
+  min-height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 30px 18px rgba(0, 0, 0, 0.1),
+    0 13px 13px rgba(0, 0, 0, 0.17),
+    0 3px 7px rgba(0, 0, 0, 0.2);
+  margin: 8px auto 0;
+  padding: 5px;
+}
+
+.coc-bundles__card-btn--light {
+  background: var(--coc-color-white);
+  color: var(--coc-color-primary);
+}
+
+.coc-bundles__payment {
+  text-align: center;
+  padding: 12px 8px 15px;
+}
+
+.coc-bundles__payment img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
+  margin: 7px auto;
+}
+
+.coc-bundles__payment p {
+  color: inherit;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .coc-preview-main {
+    padding: 18px;
+  }
+
+  .coc-bundles--cards .coc-bundles__inner {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .coc-bundles__plans {
+    gap: 10px;
+  }
+
+  .coc-bundles__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .coc-bundles__price span {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coc-preview-main {
+    padding: 12px;
+  }
+
+  .coc-bundles--cards .coc-bundles__inner {
+    max-width: 100%;
+  }
+
+  .coc-bundles__plans.is-active {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .coc-bundles__card {
+    width: 100%;
+  }
+
+  .coc-bundles__card-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .coc-bundles__media {
+    width: 42%;
+    min-height: auto;
+  }
+
+  .coc-bundles__info {
+    width: 58%;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .coc-desktop-view {
+    display: none;
+  }
+
+  .coc-mobile-view {
+    display: flex;
+  }
+
+  .coc-bundles__name,
+  .coc-bundles__sub {
+    text-align: left;
+  }
+
+  .coc-bundles__product-image,
+  .coc-bundles__product-image--large {
+    max-width: 160px;
+    max-height: 110px;
+  }
+
+  .coc-bundles__price,
+  .coc-bundles__total {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .coc-bundles__daily-price {
+    width: fit-content;
+  }
+
+  .coc-bundles__card-btn {
+    max-width: none;
+    width: calc(100% - 24px);
+    min-height: 44px;
+  }
+
+  .coc-bundles__payment {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .coc-bundles__heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .coc-bundles__alert {
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+  .coc-bundles__toggle-btn {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 7px 6px;
+  }
+
+  .coc-bundles__toggle-btn span {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .coc-bundles__card-content {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .coc-bundles__name {
+    font-size: 17px;
+  }
+
+  .coc-bundles__sub {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .coc-bundles__price span {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .coc-bundles__daily-price {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}

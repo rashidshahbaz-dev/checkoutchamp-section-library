@@ -1,210 +1,479 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.coc-preview-main {
+  padding: 20px;
+}
 
-  <title>COC Bundles List V1</title>
+.coc-bundles,
+.coc-bundles * {
+  box-sizing: border-box;
+}
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="../../../global/base.css">
-  <link rel="stylesheet" href="../../../palettes/palette-01.css">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <main class="coc-preview-main">
-    <section class="coc-bundles coc-bundles--list coc-bundles-list-v1" data-coc-bundles>
-      <div class="coc-bundles__inner">
-        <div class="coc-bundles__sale">
-          <h3 class="coc-bundles__sale-title">MEMORIAL DAY SALE</h3>
-          <p class="coc-bundles__sale-subtitle">Up to 58% OFF</p>
-        </div>
+.coc-bundles {
+  width: 100%;
+  font-family: var(--coc-font-main);
+  color: var(--coc-color-text);
+}
 
-        <div class="coc-bundles__tabs" role="tablist" aria-label="Purchase type">
-          <button class="coc-bundles__tab is-active" type="button" data-coc-bundle-tab="one-time" action="none">
-            One time purchase
-          </button>
-          <button class="coc-bundles__tab" type="button" data-coc-bundle-tab="subscribe" action="none">
-            Subscribe &amp; <strong>save 58%</strong>
-          </button>
-        </div>
+.coc-bundles__inner {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
 
-        <form class="coc-bundles__panel is-active" data-coc-bundle-panel="one-time">
-          <input type="hidden" name="quantity" value="1">
+.coc-bundles__sale {
+  text-align: center;
+  margin-block: 28px;
+}
 
-          <div class="coc-bundles__badge">Most Popular</div>
+.coc-bundles__sale-title {
+  color: var(--coc-color-danger);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-          <div class="coc-bundles__options">
-            <label class="coc-bundles__option" data-price="$159">
-              <input type="radio" name="bundle_one_time" value="3-month" data-total="$159">
+.coc-bundles__sale-subtitle {
+  color: var(--coc-color-danger);
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
 
-              <span class="coc-bundles__option-left">
-                <span class="coc-bundles__radio"></span>
-                <span class="coc-bundles__image-wrap">
-                  <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Group_1484581285_1_1.png?v=1772900559&amp;width=128" alt="3 Month Supply">
-                </span>
-                <span class="coc-bundles__content">
-                  <span class="coc-bundles__title">3 Month Supply</span>
-                  <span class="coc-bundles__subtitle">6 Micro Infusion Treatments</span>
-                </span>
-              </span>
+.coc-bundles__tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--coc-color-border);
+  border-radius: var(--coc-radius-md);
+  overflow: hidden;
+  margin-block: 16px;
+  background: var(--coc-color-white);
+}
 
-              <span class="coc-bundles__price-box">
-                <span class="coc-bundles__unit-price"><span>$26</span>/treatment</span>
-                <span class="coc-bundles__compare"><span>$49</span>/treatment</span>
-                <span class="coc-bundles__save">YOU SAVE 46%</span>
-              </span>
-            </label>
+.coc-bundles__tab {
+  min-height: 48px;
+  border: 0;
+  background: var(--coc-color-white);
+  color: var(--coc-color-text);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  border-radius: var(--coc-radius-sm);
+  padding: 12px 8px;
+}
 
-            <label class="coc-bundles__option" data-price="$118">
-              <input type="radio" name="bundle_one_time" value="2-month" data-total="$118">
+.coc-bundles__tab strong {
+  font-weight: 700;
+}
 
-              <span class="coc-bundles__option-left">
-                <span class="coc-bundles__radio"></span>
-                <span class="coc-bundles__image-wrap">
-                  <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Group_1484581283_1_47798a82-c7d4-4ff4-86b6-d95934c00c53.png?v=1772900584&amp;width=128" alt="2 Month Supply">
-                </span>
-                <span class="coc-bundles__content">
-                  <span class="coc-bundles__title">2 Month Supply</span>
-                  <span class="coc-bundles__subtitle">4 Micro Infusion Treatments</span>
-                </span>
-              </span>
+.coc-bundles__tab.is-active {
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+}
 
-              <span class="coc-bundles__price-box">
-                <span class="coc-bundles__unit-price"><span>$29</span>/treatment</span>
-                <span class="coc-bundles__compare"><span>$49</span>/treatment</span>
-                <span class="coc-bundles__save">YOU SAVE 40%</span>
-              </span>
-            </label>
+.coc-bundles__panel {
+  display: none;
+  width: 100%;
+}
 
-            <label class="coc-bundles__option is-selected" data-price="$99">
-              <input type="radio" name="bundle_one_time" value="1-month" data-total="$99" checked>
+.coc-bundles__panel.is-active {
+  display: block;
+}
 
-              <span class="coc-bundles__option-left">
-                <span class="coc-bundles__radio"></span>
-                <span class="coc-bundles__image-wrap">
-                  <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Seranova24469_1.png?v=1772900708&amp;width=128" alt="1 Month Supply">
-                </span>
-                <span class="coc-bundles__content">
-                  <span class="coc-bundles__title">1 Month Supply</span>
-                  <span class="coc-bundles__subtitle">2 Micro Infusion Treatments</span>
-                </span>
-              </span>
+.coc-bundles__badge {
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  margin-left: 18px;
+  margin-bottom: -9px;
+  border-radius: 999px;
+  background: var(--coc-color-accent);
+  color: var(--coc-color-white);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 4px 18px;
+}
 
-              <span class="coc-bundles__price-box">
-                <span class="coc-bundles__unit-price"><span>$49</span>/treatment</span>
-              </span>
-            </label>
-          </div>
+.coc-bundles__options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-          <div class="coc-bundles__guarantee-line">90 Day Money Back Guarantee</div>
+.coc-bundles__option {
+  position: relative;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #e8ecee;
+  border: 1px solid var(--coc-color-border);
+  border-radius: var(--coc-radius-md);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  padding: 14px 18px;
+}
 
-          <button class="coc-bundles__button" type="button" onclick="callMethod(event)" action="choose" offer="" upsell="" quantity="" price="" variantvalue="" replaceproductid="" billnow="false" size="none" btntype="none">
-            ADD TO CART
-          </button>
-        </form>
+.coc-bundles__option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
 
-        <form class="coc-bundles__panel" data-coc-bundle-panel="subscribe">
-          <input type="hidden" name="quantity" value="1">
+.coc-bundles__option-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
 
-          <div class="coc-bundles__frequency-box">
-            <div class="coc-bundles__frequency-header">
-              <strong>Frequency:</strong>
-              <span>Ships every 2 months</span>
-            </div>
+.coc-bundles__radio {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--coc-color-black);
+  border-radius: 999px;
+  flex-shrink: 0;
+  background: transparent;
+}
 
-            <div class="coc-bundles__badge coc-bundles__badge--subscribe">Most Popular</div>
+.coc-bundles__image-wrap {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 
-            <div class="coc-bundles__options">
-              <label class="coc-bundles__option" data-price="$126" data-compare="$297">
-                <input type="radio" name="bundle_subscribe" value="3-month" data-total="$126" data-compare="$297">
+.coc-bundles__image {
+  display: block;
+  max-width: 100%;
+  max-height: 68px;
+  object-fit: contain;
+}
 
-                <span class="coc-bundles__option-left">
-                  <span class="coc-bundles__radio"></span>
-                  <span class="coc-bundles__image-wrap">
-                    <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Group_1484581285_1_1.png?v=1772900559&amp;width=128" alt="3 Month Supply">
-                  </span>
-                  <span class="coc-bundles__content">
-                    <span class="coc-bundles__title">3 Month Supply</span>
-                    <span class="coc-bundles__subtitle">6 Micro Infusion Treatments</span>
-                  </span>
-                </span>
+.coc-bundles__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
 
-                <span class="coc-bundles__price-box">
-                  <span class="coc-bundles__unit-price"><span>$21</span>/treatment</span>
-                  <span class="coc-bundles__compare"><span>$49</span>/treatment</span>
-                  <span class="coc-bundles__save">YOU SAVE 58%</span>
-                </span>
-              </label>
+.coc-bundles__title {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  color: inherit;
+}
 
-              <label class="coc-bundles__option is-selected" data-price="$98" data-compare="$198">
-                <input type="radio" name="bundle_subscribe" value="2-month" data-total="$98" data-compare="$198" checked>
+.coc-bundles__subtitle {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  color: inherit;
+}
 
-                <span class="coc-bundles__option-left">
-                  <span class="coc-bundles__radio"></span>
-                  <span class="coc-bundles__image-wrap">
-                    <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Group_1484581283_1_47798a82-c7d4-4ff4-86b6-d95934c00c53.png?v=1772900584&amp;width=128" alt="2 Month Supply">
-                  </span>
-                  <span class="coc-bundles__content">
-                    <span class="coc-bundles__title">2 Month Supply</span>
-                    <span class="coc-bundles__subtitle">4 Micro Infusion Treatments</span>
-                  </span>
-                </span>
+.coc-bundles__price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+  text-align: right;
+}
 
-                <span class="coc-bundles__price-box">
-                  <span class="coc-bundles__unit-price"><span>$24</span>/treatment</span>
-                  <span class="coc-bundles__compare"><span>$49</span>/treatment</span>
-                  <span class="coc-bundles__save">YOU SAVE 50%</span>
-                </span>
-              </label>
+.coc-bundles__unit-price {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--coc-color-success);
+  white-space: nowrap;
+}
 
-              <label class="coc-bundles__option" data-price="$78" data-compare="$99">
-                <input type="radio" name="bundle_subscribe" value="1-month" data-total="$78" data-compare="$99">
+.coc-bundles__compare {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #9c9c9c;
+  text-decoration: line-through;
+  white-space: nowrap;
+}
 
-                <span class="coc-bundles__option-left">
-                  <span class="coc-bundles__radio"></span>
-                  <span class="coc-bundles__image-wrap">
-                    <img class="coc-bundles__image fk-disable-lazy" src="https://seranova.com/cdn/shop/files/Seranova24469_1.png?v=1772900708&amp;width=128" alt="1 Month Supply">
-                  </span>
-                  <span class="coc-bundles__content">
-                    <span class="coc-bundles__title">1 Month Supply</span>
-                    <span class="coc-bundles__subtitle">2 Micro Infusion Treatments</span>
-                  </span>
-                </span>
+.coc-bundles__save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  border-radius: 4px;
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 4px;
+}
 
-                <span class="coc-bundles__price-box">
-                  <span class="coc-bundles__unit-price"><span>$39</span>/treatment</span>
-                  <span class="coc-bundles__compare"><span>$49</span>/treatment</span>
-                  <span class="coc-bundles__save">YOU SAVE 21%</span>
-                </span>
-              </label>
-            </div>
-          </div>
+.coc-bundles__option.is-selected {
+  background: var(--coc-color-primary);
+  color: var(--coc-color-white);
+  border-color: var(--coc-color-primary);
+}
 
-          <div class="coc-bundles__guarantee-line">90 Day Money Back Guarantee | Pause or cancel anytime</div>
+.coc-bundles__option.is-selected .coc-bundles__radio {
+  border: 2px solid var(--coc-color-white);
+  background: var(--coc-color-black);
+}
 
-          <button class="coc-bundles__button" type="button" onclick="callMethod(event)" action="choose" offer="" upsell="" quantity="" price="" variantvalue="" replaceproductid="" billnow="false" size="none" btntype="none">
-            ADD TO CART
-          </button>
-        </form>
+.coc-bundles__option.is-selected .coc-bundles__save {
+  background: var(--coc-color-accent);
+}
 
-        <div class="coc-bundles__risk">
-          <div class="coc-bundles__seal" aria-hidden="true">
-            <svg viewBox="0 0 76 76">
-              <circle cx="38" cy="38" r="34" fill="none" stroke="currentColor" stroke-width="2"></circle>
-              <circle cx="38" cy="38" r="24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2.5 3"></circle>
-              <text x="38" y="32" text-anchor="middle" font-size="9" font-weight="700" fill="currentColor">90</text>
-              <text x="38" y="42" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor">DAY</text>
-              <text x="38" y="52" text-anchor="middle" font-size="6" font-weight="700" fill="currentColor">GUARANTEE</text>
-            </svg>
-          </div>
+.coc-bundles__guarantee-line {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 10px 0 12px;
+}
 
-          <p><strong>Try it risk free for 90 days.</strong> If you don't see visible results after 90 days, you'll get a refund.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+.coc-bundles__button {
+  width: 100%;
+  min-height: 64px;
+  border: 0;
+  border-radius: var(--coc-radius-md);
+  background: var(--coc-btn-bg);
+  color: var(--coc-btn-text);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
-  <script src="./script.js"></script>
-</body>
-</html>
+.coc-bundles__risk {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 16px;
+  border: 1.5px solid var(--coc-color-primary);
+  border-radius: var(--coc-radius-md);
+  background: var(--coc-color-white);
+  padding: 10px;
+}
+
+.coc-bundles__seal {
+  width: 58px;
+  height: 58px;
+  color: var(--coc-color-primary);
+  flex-shrink: 0;
+}
+
+.coc-bundles__seal svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.coc-bundles__risk p {
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0;
+}
+
+.coc-bundles__risk strong {
+  font-weight: 700;
+}
+
+.coc-bundles__frequency-box {
+  border: 1px solid var(--coc-color-border);
+  border-radius: var(--coc-radius-lg);
+  padding: 20px 16px 16px;
+}
+
+.coc-bundles__frequency-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  color: var(--coc-color-text);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.coc-bundles__frequency-header strong {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.coc-bundles__frequency-header span {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.coc-bundles__badge--subscribe {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .coc-preview-main {
+    padding: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .coc-bundles__inner {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coc-preview-main {
+    padding: 12px;
+  }
+
+  .coc-bundles__inner {
+    max-width: 100%;
+  }
+
+  .coc-bundles__sale-title {
+    font-size: 15px;
+  }
+
+  .coc-bundles__sale-subtitle {
+    font-size: 10px;
+  }
+
+  .coc-bundles__tabs {
+    margin-bottom: 16px;
+    border-radius: 10px;
+  }
+
+  .coc-bundles__tab {
+    min-height: 34px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .coc-bundles__badge {
+    margin-left: 16px;
+    margin-bottom: -8px;
+    font-size: 11px;
+    padding: 3px 16px 4px;
+  }
+
+  .coc-bundles__option {
+    min-height: 78px;
+    gap: 6px;
+    border-radius: 10px;
+    padding: 11px 8px;
+  }
+
+  .coc-bundles__option-left {
+    gap: 7px;
+  }
+
+  .coc-bundles__radio {
+    width: 14px;
+    height: 14px;
+  }
+
+  .coc-bundles__image-wrap {
+    width: 58px;
+    height: 44px;
+  }
+
+  .coc-bundles__image {
+    max-height: 44px;
+  }
+
+  .coc-bundles__title {
+    font-size: 14px;
+  }
+
+  .coc-bundles__subtitle {
+    font-size: 11px;
+    max-width: 120px;
+  }
+
+  .coc-bundles__price-box {
+    gap: 4px;
+  }
+
+  .coc-bundles__unit-price,
+  .coc-bundles__compare {
+    font-size: 12px;
+  }
+
+  .coc-bundles__save {
+    min-height: 17px;
+    font-size: 9px;
+    padding: 3px 5px;
+  }
+
+  .coc-bundles__guarantee-line {
+    font-size: 13px;
+    margin: 9px 0 11px;
+  }
+
+  .coc-bundles__button {
+    min-height: 57px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+  .coc-bundles__risk {
+    margin-top: 14px;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px 13px;
+  }
+
+  .coc-bundles__seal {
+    width: 52px;
+    height: 52px;
+  }
+
+  .coc-bundles__risk p {
+    font-size: 13px;
+  }
+
+  .coc-bundles__frequency-box {
+    padding: 8px;
+  }
+
+  .coc-bundles__frequency-header {
+    margin-bottom: 16px;
+    gap: 10px;
+  }
+
+  .coc-bundles__frequency-header strong {
+    font-size: 16px;
+  }
+
+  .coc-bundles__frequency-header span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .coc-bundles__tab {
+    font-size: 11px;
+  }
+
+  .coc-bundles__option {
+    padding: 10px 7px;
+  }
+
+  .coc-bundles__subtitle {
+    max-width: 105px;
+  }
+}
