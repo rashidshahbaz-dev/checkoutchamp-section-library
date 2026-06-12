@@ -1,9 +1,22 @@
 (function () {
+  function getOuterHTMLFromSelector(htmlText, selector) {
+    if (!selector) return htmlText;
+
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(htmlText, "text/html");
+    var selected = doc.querySelector(selector);
+
+    if (!selected) return htmlText;
+
+    return selected.outerHTML;
+  }
+
   function loadCodeBlocks() {
     var blocks = document.querySelectorAll("[data-code-src]");
 
     blocks.forEach(function (block) {
       var filePath = block.getAttribute("data-code-src");
+      var selector = block.getAttribute("data-code-selector");
 
       if (!filePath) return;
 
@@ -16,7 +29,11 @@
           return response.text();
         })
         .then(function (code) {
-          block.textContent = code;
+          if (selector) {
+            code = getOuterHTMLFromSelector(code, selector);
+          }
+
+          block.textContent = code.trim();
         })
         .catch(function () {
           block.textContent = "Unable to load code from: " + filePath;
