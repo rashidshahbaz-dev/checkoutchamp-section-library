@@ -1,0 +1,123 @@
+.coc-faq,
+.coc-faq * {
+  box-sizing: border-box;
+}
+
+.coc-preview-main {
+  padding: 20px;
+}
+
+.coc-faq {
+  width: 100%;
+  background: #f8bcd7;
+  color: #7a0335;
+  font-family: var(--coc-font-main, Inter, Arial, sans-serif);
+  padding: 50px 0;
+}
+
+.coc-faq__container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.coc-faq h2 {
+  color: #7a0335;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+}
+
+.coc-faq__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 30px;
+  max-width: 880px;
+  margin: 30px auto 0;
+}
+
+.coc-faq__item {
+  border: 0;
+  border-radius: 10px;
+  background: #ffe4f0;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.coc-faq__item summary {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  color: #7a0335;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 700;
+  padding: 14px 48px 14px 14px;
+}
+
+.coc-faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.coc-faq__item summary::before,
+.coc-faq__item summary::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 13px;
+  height: 2px;
+  background: #f51975;
+  border-radius: 99px;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.coc-faq__item summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.coc-faq__item[open] summary::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.coc-faq__item p {
+  color: #7a0335;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: -4px 0 0;
+  padding: 0 14px 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .coc-preview-main {
+    padding: 0;
+  }
+
+  .coc-faq {
+    padding: 34px 0;
+  }
+
+  .coc-faq__container {
+    padding: 0 10px;
+  }
+
+  .coc-faq h2 {
+    font-size: 28px;
+  }
+
+  .coc-faq__grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .coc-faq__item summary {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
